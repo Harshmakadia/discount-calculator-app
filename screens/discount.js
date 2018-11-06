@@ -45,7 +45,7 @@ class DiscountScreen extends React.Component {
         let {discount, amount} = this.state;
         amount = parseFloat(amount);
         discount = parseFloat(discount)/100;
-        let discountPrice = amount - (amount * discount).toFixed(2)
+        let discountPrice = amount - (amount * discount).toFixed(2);
         this.setState({
             discountPrice,
             showDiscountPrice: true
@@ -59,7 +59,7 @@ class DiscountScreen extends React.Component {
                     title="% Discount"
                     drawerOpen={() => this.props.navigation.openDrawer()}
                 />
-                <Content contentContainerStyle={{ alignItems: 'center', justifyContent: 'center', padding: 10 }}>
+                <Content contentContainerStyle={{ marginTop: 20, alignItems: 'center', justifyContent: 'center', padding: 10 }}>
                     <Text style={styles.title}>₹ Amount</Text>
                     <Text> {"\n"} </Text>
                     <TextInput 
