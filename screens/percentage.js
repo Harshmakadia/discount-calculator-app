@@ -91,7 +91,7 @@ class HomeScreen extends React.Component {
                 </Content>
                 <Footer>
                     <FooterTab>
-                        <Button full primary onPress = {() => this.calculatePercentageOf()}>
+                        <Button style={styles.btn} full onPress = {() => this.calculatePercentageOf()}>
                         <Text style={styles.calculateBtn}>Calculate % Of</Text>
                         </Button>
                     </FooterTab>
@@ -113,7 +113,7 @@ const styles = StyleSheet.create({
     fontSize: 30,
     color: '#000000',
     textAlign: 'center',
-    backgroundColor: '#dcdcdc',
+    backgroundColor: '#00b0ff',
     width: '100%',
   },
   textInput: {
@@ -129,5 +129,11 @@ const styles = StyleSheet.create({
     fontSize: 50,
     textAlign: 'center',
     marginTop: 20
-  }
+  },
+  btn: {
+    backgroundColor: '#00b0ff'
+  },
+  view: {
+    width: '100%'
+  },
 });
